@@ -411,6 +411,13 @@ final class Type
             [$inner, $count] = $element;
 
             $list = self::listOf($text);
+
+            if (null === $list) {
+                // A list that starts like JSON and is not JSON is a typo, not an
+                // empty list: `[1,2` must not become "no arguments".
+                return new Problem('array.not_json', [$type]);
+            }
+
             $problem = self::problemArray($inner, $list);
 
             if (null !== $problem) {
@@ -508,7 +515,7 @@ final class Type
         if (null !== $element) {
             $out = [];
 
-            foreach (self::listOf($text) as $value) {
+            foreach (self::listOf($text) ?? [] as $value) {
                 $out[] = self::normalise($element[0], $value);
             }
 
@@ -552,9 +559,9 @@ final class Type
      *
      * @param string $text Input.
      *
-     * @return array
+     * @return array|null Null when the text starts like JSON and is not JSON.
      */
-    private static function listOf(string $text): array
+    private static function listOf(string $text): ?array
     {
         if ('' === $text) {
             return [];
@@ -563,7 +570,9 @@ final class Type
         if ('[' === substr($text, 0, 1)) {
             $decoded = json_decode($text, true);
 
-            return is_array($decoded) ? $decoded : [];
+            // `null` is the difference between "a broken list" and "an empty
+            // list", and only the caller knows which is harmless.
+            return is_array($decoded) ? $decoded : null;
         }
 
         return array_map('trim', explode(',', $text));

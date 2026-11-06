@@ -128,6 +128,13 @@ final class TypeTest extends TestCase
         $this->assertSame(2, $params[0]);
         $this->assertSame('uint8', $params[1]);
 
+        // A list that starts like JSON and is not JSON is a typo, not an empty
+        // list: `[1,2` must not be read as "no arguments".
+        $this->assertSame('array.not_json', Type::problem('uint8[]', '[1,2')?->code());
+        $this->assertSame('array.not_json', Type::problem('uint8[]', '[]trailing')?->code());
+        $this->assertNull(Type::problem('uint8[]', '[]'));
+        $this->assertNull(Type::problem('uint8[]', '1,2,3'));
+
         $this->assertSame('array.count', Type::problem('uint8[3]', '1,2')?->code());
         $this->assertNull(Type::problem('uint8[2]', '1,2'));
         $this->assertSame('array.nested', Type::problem('uint8[][]', '1,2')?->code());
