@@ -9,10 +9,10 @@
  * @license MIT
  */
 
-namespace Olegabr\EthAbi\Abi;
+namespace Ethereumico\EthAbi\Abi;
 
-use Olegabr\EthAbi\Support\Hex;
-use Olegabr\EthAbi\Support\Uint;
+use Ethereumico\EthAbi\Support\Hex;
+use Ethereumico\EthAbi\Support\Uint;
 
 class SolidityType
 {

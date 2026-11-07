@@ -8,9 +8,9 @@
 
 declare(strict_types=1);
 
-namespace Olegabr\EthAbi\Tests;
+namespace Ethereumico\EthAbi\Tests;
 
-use Olegabr\EthAbi\Abi\Ethabi;
+use Ethereumico\EthAbi\Abi\Ethabi;
 use PHPUnit\Framework\TestCase;
 
 final class EthabiTest extends TestCase

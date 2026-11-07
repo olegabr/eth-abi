@@ -9,22 +9,22 @@
  * @license MIT
  */
 
-namespace Olegabr\EthAbi\Abi;
+namespace Ethereumico\EthAbi\Abi;
 
 use InvalidArgumentException;
 use stdClass;
-use Olegabr\EthAbi\Support\Hex;
-use Olegabr\EthAbi\Support\Uint;
-use Olegabr\EthAbi\Abi\Types\Address;
-use Olegabr\EthAbi\Abi\Types\Boolean;
-use Olegabr\EthAbi\Abi\Types\Bytes;
-use Olegabr\EthAbi\Abi\Types\DynamicBytes;
-use Olegabr\EthAbi\Abi\Types\Integer;
-use Olegabr\EthAbi\Abi\Types\Str;
-use Olegabr\EthAbi\Abi\Types\Uinteger;
-use Olegabr\EthAbi\Abi\Types\SizedArray;
-use Olegabr\EthAbi\Abi\Types\DynamicArray;
-use Olegabr\EthAbi\Abi\Types\Tuple;
+use Ethereumico\EthAbi\Support\Hex;
+use Ethereumico\EthAbi\Support\Uint;
+use Ethereumico\EthAbi\Abi\Types\Address;
+use Ethereumico\EthAbi\Abi\Types\Boolean;
+use Ethereumico\EthAbi\Abi\Types\Bytes;
+use Ethereumico\EthAbi\Abi\Types\DynamicBytes;
+use Ethereumico\EthAbi\Abi\Types\Integer;
+use Ethereumico\EthAbi\Abi\Types\Str;
+use Ethereumico\EthAbi\Abi\Types\Uinteger;
+use Ethereumico\EthAbi\Abi\Types\SizedArray;
+use Ethereumico\EthAbi\Abi\Types\DynamicArray;
+use Ethereumico\EthAbi\Abi\Types\Tuple;
 
 class Ethabi
 {

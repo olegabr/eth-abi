@@ -8,12 +8,12 @@
 
 declare(strict_types=1);
 
-namespace Olegabr\EthAbi\Tests;
+namespace Ethereumico\EthAbi\Tests;
 
 use InvalidArgumentException;
-use Olegabr\EthAbi\InvalidValue;
-use Olegabr\EthAbi\Problem;
-use Olegabr\EthAbi\Type;
+use Ethereumico\EthAbi\InvalidValue;
+use Ethereumico\EthAbi\Problem;
+use Ethereumico\EthAbi\Type;
 use PHPUnit\Framework\TestCase;
 
 final class TypeTest extends TestCase

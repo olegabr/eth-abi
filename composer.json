@@ -37,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Olegabr\\EthAbi\\": "src/"
+            "Ethereumico\\EthAbi\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Olegabr\\EthAbi\\Tests\\": "tests/"
+            "Ethereumico\\EthAbi\\Tests\\": "tests/"
         }
     },
     "config": {

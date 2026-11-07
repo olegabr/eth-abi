@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Olegabr\EthAbi;
+namespace Ethereumico\EthAbi;
 
 /**
  * Turns the text of one input field into the value the encoder expects, and

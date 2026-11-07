@@ -25,7 +25,7 @@ building `2^256` on every call).
 ## Use
 
 ```php
-use Olegabr\EthAbi\Type;
+use Ethereumico\EthAbi\Type;
 
 Type::problem('uint8', '256');       // Problem(code: 'int.too_big', params: ['uint8', '256'])
 Type::problem('uint8', '255');       // null - the value is fine
@@ -48,7 +48,7 @@ caller that logs it wants the code.
 ## Encoding and decoding
 
 ```php
-use Olegabr\EthAbi\Abi\Ethabi;
+use Ethereumico\EthAbi\Abi\Ethabi;
 
 $abi = new Ethabi();
 

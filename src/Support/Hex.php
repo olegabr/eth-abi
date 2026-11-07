@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Olegabr\EthAbi\Support;
+namespace Ethereumico\EthAbi\Support;
 
 use InvalidArgumentException;
 use kornrunner\Keccak;

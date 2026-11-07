@@ -9,12 +9,12 @@
  * @license MIT
  */
 
-namespace Olegabr\EthAbi\Abi\Types;
+namespace Ethereumico\EthAbi\Abi\Types;
 
 use InvalidArgumentException;
-use Olegabr\EthAbi\Support\Hex;
-use Olegabr\EthAbi\Abi\Types\BaseArray;
-use Olegabr\EthAbi\Support\Uint;
+use Ethereumico\EthAbi\Support\Hex;
+use Ethereumico\EthAbi\Abi\Types\BaseArray;
+use Ethereumico\EthAbi\Support\Uint;
 
 class DynamicArray extends BaseArray
 {

@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Olegabr\EthAbi;
+namespace Ethereumico\EthAbi;
 
 use InvalidArgumentException;
 

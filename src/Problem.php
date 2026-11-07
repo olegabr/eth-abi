@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Olegabr\EthAbi;
+namespace Ethereumico\EthAbi;
 
 /**
  * A refusal: a stable code and the values that go into the message.

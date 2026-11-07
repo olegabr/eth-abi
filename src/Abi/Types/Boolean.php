@@ -9,11 +9,11 @@
  * @license MIT
  */
 
-namespace Olegabr\EthAbi\Abi\Types;
+namespace Ethereumico\EthAbi\Abi\Types;
 
 use InvalidArgumentException;
-use Olegabr\EthAbi\Abi\SolidityType;
-use Olegabr\EthAbi\Abi\Types\IType;
+use Ethereumico\EthAbi\Abi\SolidityType;
+use Ethereumico\EthAbi\Abi\Types\IType;
 
 class Boolean extends SolidityType implements IType
 {

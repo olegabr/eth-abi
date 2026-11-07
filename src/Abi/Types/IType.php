@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace Olegabr\EthAbi\Abi\Types;
+namespace Ethereumico\EthAbi\Abi\Types;
 
 interface IType
 {

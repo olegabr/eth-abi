@@ -9,13 +9,13 @@
  * @license MIT
  */
 
-namespace Olegabr\EthAbi\Abi\Types;
+namespace Ethereumico\EthAbi\Abi\Types;
 
 use InvalidArgumentException;
-use Olegabr\EthAbi\Support\Hex;
-use Olegabr\EthAbi\Support\Uint;
-use Olegabr\EthAbi\Abi\SolidityType;
-use Olegabr\EthAbi\Abi\Types\IType;
+use Ethereumico\EthAbi\Support\Hex;
+use Ethereumico\EthAbi\Support\Uint;
+use Ethereumico\EthAbi\Abi\SolidityType;
+use Ethereumico\EthAbi\Abi\Types\IType;
 
 class DynamicBytes extends SolidityType implements IType
 {
